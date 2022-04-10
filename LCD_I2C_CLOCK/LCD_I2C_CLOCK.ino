@@ -1,3 +1,8 @@
+/*------------Clock_Without_RTC_LCD-I2C-----------------*/
+/*-------------Source Code by---------------------------*/
+/*------Modified & Adapted by Habib.m @Hab_mz-----------*/
+/*-----------------------V1.1---------------------------*/
+
 #include <LiquidCrystal_I2C.h>
 #include <TimeLib.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);

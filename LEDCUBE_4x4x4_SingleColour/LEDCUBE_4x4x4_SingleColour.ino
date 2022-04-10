@@ -1,4 +1,4 @@
-/*--------LED Cube 4x4x4 Single Colour Program-----*/
+/*--------LED Cube 4x4x4 Single Color Program-----*/
 /*---------Source Code by -------------------------*/
 /*-------Modified & Adapted by Habib.m @Hab_mz-----*/
 /*----------------------V1.1-------------------------*/

@@ -35,11 +35,12 @@ void setup() {
   pinMode(buzzer, OUTPUT);
   pinMode(butPak,INPUT);
   pinMode(butOn,INPUT);
-  myservo.attach(3);
+                        //rtc.setTime(22,00,00);
+  myservo.attach(11);
   myservo.write(83);
   delay(500);
   myservo.detach();
-  //rtc.setTime(19,52,00);
+  tone(buzzer, 2000); delay(2000); noTone(buzzer);
 }
 
 void loop() {
@@ -119,25 +120,25 @@ else if(waktu=="23:00:01"){
 /*-----------------------------VOID----------------------------------*/
 
 void pakan(){
-      myservo.attach(3);
+      myservo.attach(11);
       myservo.write(155);              
       delay(350);
       myservo.detach();
       delay(10);
 
-      myservo.attach(3);
+      myservo.attach(11);
       myservo.write(83);              
       delay(500);
       myservo.detach();
       delay(100); 
 
-      myservo.attach(3);
+      myservo.attach(11);
       myservo.write(155);              
       delay(350);
       myservo.detach();
       delay(10);
 
-      myservo.attach(3);
+      myservo.attach(11);
       myservo.write(83);              
       delay(500);
       myservo.detach();

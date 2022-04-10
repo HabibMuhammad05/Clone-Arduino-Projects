@@ -1,3 +1,8 @@
+/*----------HC_SR04_Double_Sensor_Access----------------*/
+/*-------------Source Code by---------------------------*/
+/*------Modified & Adapted by Habib.m @Hab_mz-----------*/
+/*-----------------------V1.1---------------------------*/
+
 #define gnd2 6
 #define echo1 5 
 #define trig1 4

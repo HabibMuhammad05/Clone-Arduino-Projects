@@ -1,7 +1,7 @@
 /*----------------MD_MAX7219 Demo Run-------------------*/
 /*-------------Source Code by Roboratory ---------------*/
 /*-------Modified & Adapted by Habib.m @Hab_mz----------*/
-/*-----------------------V1.0-------------------------*/
+/*-----------------------V1.0---------------------------*/
 
 // Use the MD_MAX72XX library to Display a Daft Punk LED Helmet
 //

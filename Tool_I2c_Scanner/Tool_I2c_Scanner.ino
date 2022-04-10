@@ -1,3 +1,8 @@
+/*-------------I2C_Address_Scanner_Tool-----------------*/
+/*-------------Source Code by---------------------------*/
+/*------Modified & Adapted by Habib.m @Hab_mz-----------*/
+/*-----------------------V1.1---------------------------*/
+
 #include <Wire.h>;
 void setup()
 {

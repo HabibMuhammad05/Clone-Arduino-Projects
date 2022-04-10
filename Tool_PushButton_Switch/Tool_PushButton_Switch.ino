@@ -1,7 +1,7 @@
-/*---------------PushButton Led Control----------------*/
+/*---------------PushButton Led Control---------------*/
 /*---------Source Code by Habib.m @Hab_mz-------------*/
-/*------Modified & Adapted by Habib.m @Hab_mz--------*/
-/*----------------------V1.0-------------------------*/
+/*------Modified & Adapted by Habib.m @Hab_mz---------*/
+/*----------------------V1.0--------------------------*/
 int butPak=7;
 int butOn=8;
 int butOff=9;

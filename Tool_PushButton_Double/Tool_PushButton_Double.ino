@@ -1,5 +1,5 @@
-/*---------------PushButton Control----------------*/
-/*---------Source Code by Habib.m @Hab_mz-------------*/
+/*---------------PushButton Control------------------*/
+/*---------Source Code by Habib.m @Hab_mz------------*/
 /*------Modified & Adapted by Habib.m @Hab_mz--------*/
 /*----------------------V1.0-------------------------*/
 int butPak=7;
