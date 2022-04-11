@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "Tool_Timer\\Tool_Timer.ino",
+    "port": "COM4"
+}
