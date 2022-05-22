@@ -14,8 +14,8 @@ char keys[ROWS][COLS] = {
   {'*','0','#','D'}
 };
  
-byte colPins[COLS] = {5, 4, 3, 2}; // pin 2,3,4,5 untuk pin kolom keypad (lihat gambar)
-byte rowPins[ROWS] = {9, 8, 7, 6}; // pin 6,7,8,9 untuk pin baris keypad (lihat gambar)
+byte colPins[COLS] = {5, 4, 3, 2}; // {9, 8, 7, 6} pin 2,3,4,5 untuk pin kolom keypad (lihat gambar)
+byte rowPins[ROWS] = {9, 8, 7, 6}; // {5, 4, 3, 2} pin 6,7,8,9 untuk pin baris keypad (lihat gambar)
  
 Keypad keypad = Keypad( makeKeymap(keys), rowPins, colPins, ROWS, COLS );
  

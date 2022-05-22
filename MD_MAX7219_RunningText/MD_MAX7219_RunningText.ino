@@ -25,7 +25,7 @@ MD_Parola P = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 uint8_t scrollSpeed = 40;    // default frame delay value
 textEffect_t scrollEffect = PA_SCROLL_LEFT;
 textPosition_t scrollAlign = PA_LEFT;
-uint16_t scrollPause = 0; // in milliseconds
+uint16_t scrollPause = 1000; // in milliseconds
 
 
 void setup(void)
@@ -35,6 +35,6 @@ void setup(void)
 
 void loop(void)
 {
-  P.print("HABIB MUHAMMAD");
+  P.print("16:39:23");
   
 }
