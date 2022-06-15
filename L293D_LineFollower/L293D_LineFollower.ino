@@ -5,10 +5,12 @@
 //https://projectiot123.com/2019/03/25/l298-motor-driver-simulation-in-proteus/
 
 
-int LFor = 11;
-int RFor = 9;
-
-
+int pwmL = 9;
+int ForL = 10;
+int BacL = 8;
+int ForR = 13;
+int BacR = 12;
+int pwmR = 11;
 
 int R_S = 2;
 int C_S = 3;
@@ -16,8 +18,13 @@ int L_S = 4;
  
 void setup() {
   Serial.begin(9600);
-  pinMode(LFor, OUTPUT);
-  pinMode(RFor, OUTPUT);
+  pinMode(pwmL,OUTPUT);
+  pinMode(ForL,OUTPUT);
+  pinMode(BacL,OUTPUT);
+  pinMode(ForR,OUTPUT);
+  pinMode(BacR,OUTPUT);
+  pinMode(pwmR,OUTPUT);
+  
   pinMode(R_S, INPUT);
   pinMode(C_S, INPUT);
   pinMode(L_S, INPUT);
@@ -35,22 +42,32 @@ if ((digitalRead(L_S)== 0 )&&(digitalRead(C_S)== 0 )&&(digitalRead(R_S)== 1 ))  
 if ((digitalRead(L_S)== 1 )&&(digitalRead(C_S)== 1 )&&(digitalRead(R_S)== 1 ))  {Serial.println("Stop"); Stop();}
 }
 
-void Maju(){
-  analogWrite(RFor, 127);
-  analogWrite(LFor, 127);
+void maju(){
+  digitalWrite(ForL,HIGH);
+  digitalWrite(ForR,HIGH);
+  analogWrite(pwmL, 125);
+  analogWrite(pwmR, 120);
 }
- 
-void Kanan(){
-  analogWrite(RFor, 127);
-  analogWrite(LFor, 255);
+
+void kanan(int spdkir, int spdkan){
+  digitalWrite(ForL,HIGH);
+  digitalWrite(ForR,HIGH);
+  analogWrite(pwmL, spdkir);
+  analogWrite(pwmR, spdkan);
 }
- 
-void Kiri(){
-  analogWrite(RFor, 255);
-  analogWrite(LFor, 127);
+
+void kiri(int spdkir2, int spdkan2){
+  digitalWrite(ForL,HIGH);
+  digitalWrite(ForR,HIGH);
+  analogWrite(pwmL, spdkir2);
+  analogWrite(pwmR, spdkan2);
 }
- 
-void Stop(){
-  analogWrite(RFor, 0);
-  analogWrite(LFor, 0);
+void berhenti(){
+  digitalWrite(ForL,LOW);
+  digitalWrite(ForR,LOW);
+  digitalWrite(BacL,LOW);
+  digitalWrite(BacR,LOW);
+
+  analogWrite(pwmL, 0);
+  analogWrite(pwmR, 0);
 }
